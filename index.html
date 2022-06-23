@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Fundamental de HTML</title>
+    </head>
+    <body>
+        <!--Encabezados-->
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4><mark>Título 4</mark></h4>
+        <h5>Título 5</h5>
+        <h5>Título 6</h5>
+
+        <!--Párrafos-->
+        <p>Párrafo</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magni, laudantium enim reprehenderit ut id quo sed! Nemo quos quo, tempora incidunt voluptatum, eligendi commodi ipsum ipsam rem eius repudiandae.</p>
+
+        <!--Formatear-->
+        <p><b>texto 1</b></p>
+        <p><strong>texto 2</strong></p>
+        <p><i>texto 3</i></p>
+        <p><small>texto 4</small></p>
+        <p><mark>texto 5</mark></p>
+        <p><del>texto 6</del></p>
+        <p><ins>texto 7</ins></p>
+
+        <!--Enlaces (Links)-->
+        <a href="https://www.render2web.net" target="_blank">render2web.net</a>
+
+        <!--Atributos de etiqueta-->
+        <!--
+            <etiqueta></etiqueta>
+            Todas las etiquetas pueden tener atributos
+            Añade información acerca del elemento
+            Se añaden como pares de valores, pueden entre comillas simple o doble, Ejemplo
+            id="2"
+            title='nombre'            
+        -->
+        <h1 title="Como Contactarnos">Contáctanos</h1>
+
+        <!--Listas-->
+        <!--No ordenadas-->
+        <ul>
+            <li>Nombre</li>
+            <li>Email</li>
+            <li>Teléfono</li>
+            <li>Dirección</li>
+            <li>País</li>
+        </ul>
+
+        <!--Listas-->
+        <!--Ordenadas-->
+        <ol>
+            <li>Nombre</li>
+            <li>Email</li>
+            <li>Teléfono</li>
+            <li>Dirección</li>
+            <li>País</li>
+        </ol>
+        <!--Imagen-->
+        <img src="auto.jpg">
+
+        <!--Tabla-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>José Montoya</td>
+                    <td>joseand4@gmail.com</td>
+                    <td>323235698</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Juan García</td>
+                    <td>juang@gmail.com</td>
+                    <td>5896541</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Margarita Monsalve</td>
+                    <td>marga4@gmail.com</td>
+                    <td>55556441</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <form action="registrar.php" method="POST">
+            <div>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <br>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Ingresa tu email">
+            </div>
+            <br>
+            <div>
+                <label>Descripción:</label>
+                <textarea name="descripcion"></textarea>
+            </div>
+            <br>
+            <div>
+               <h3>Deporte:</h3>
+               <input type="radio" name="deporte" value="Fútbol">
+               <label>Fútbol</label>
+               <br>
+               <input type="radio" name="deporte" value="Natación">
+                <label>Natación</label>
+                <br>
+                <input type="radio" name="deporte" value="Ciclismo">
+                <label>Ciclismo</label>
+                <br>
+            </div>       
+
+            <br>
+            <div>
+                <h3>Pasatiempos:</h3>
+                <input type="checkbox" name="lectura" value="Lectura">
+                <label>Lectura</label>
+
+                <input type="checkbox" name="cocina" value="Cocina">
+                <label>Cocina</label>
+
+                <input type="checkbox" name="cultura" value="Cultura">
+                <label>Cultura</label>
+            </div>
+
+            <div>
+                <h3>Selección</h3>
+                <select name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Selección múltiple</h3>
+                <select name="persona" multiple>
+                    <option value="trabaja">Trabaja</option>
+                    <option value="estudia">Estudia</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Otros campos HTML</h3>
+
+                <input type="color">
+                <br>
+
+                <input type="date">
+                <br>
+
+                <input type="file">
+                <br>
+
+                <input type="hidden">
+                <br>
+
+                <!--<input type="image" src="auto.jpg">-->
+                <br>
+
+                <input type="month">
+                <br>
+
+                <input type="number">
+                <br>
+
+                <input type="password">
+                <br>
+
+                <input type="range">
+                <br>
+
+                <input type="reset">
+                <br>
+
+                <input type="search">
+                <br>
+
+                <input type="tel">
+                <br>
+
+                <input type="time">
+                <br>
+
+                <input type="url">
+                <br>
+
+                <input type="week">
+                <br>
+
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+
+        <!--Citas (Cites)-->
+        <blockquote cite="https://render2web.net">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab voluptatibus veritatis sit doloribus exercitationem. Molestiae voluptatibus a, tempore beatae iste ipsam consectetur modi cumque laudantium ratione natus excepturi officiis maiores in minus. Suscipit et maxime obcaecati natus quod dolores.
+        </blockquote>
+
+        <p>Los <abrrv title="Kit de desarrollo de software (Software development kit)">SDK</abrrv> son un conjunto de APIs</p>
+
+        <h4><cite>Cursos de desarrollo</cite> de render2web</h4>
+
+        <br>
+        <video width="320" height="240" controls>
+            <source src="nextjs.mp4" type="video/mp4">
+            Su navegador no soporta el elemento video
+        </video>
+       <br>
+       <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Su navegador no soporta el elemento audio
+    </audio>
+
+    <a href="sitio.html">Página Corporativa</a>
+
+    </body>
+</html>
